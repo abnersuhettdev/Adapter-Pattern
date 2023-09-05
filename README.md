@@ -2,13 +2,11 @@
 
 ## Intenção
 
-*Converter a interface de uma classe em outra interface esperada pelos clientes. O Adapter permite que certas classes trabalhem em conjunto, pois de outra forma seria impossível por causa de suas interfaces incompatíveis.*
+_Converter a interface de uma classe em outra interface esperada pelos clientes. O Adapter permite que certas classes trabalhem em conjunto, pois de outra forma seria impossível por causa de suas interfaces incompatíveis._
 
 ---
 
 ## Sobre o Adapter
-
-Em vídeo: https://www.youtube.com/watch?v=Y69BsV9-23M&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=16
 
 O `Adapter` é um padrão de projeto muito usado para adaptar interfaces de código de terceiros (como frameworks ou libs) ou código legado (antigo) para o nosso código atual. Com ele é possível não depender diretamente de código que não está no domínio da nossa aplicação.
 
@@ -30,9 +28,9 @@ Veja a pasta diagramas.
 
 Use o padrão Adapter quando:
 
-- você não quiser que seu código dependa diretamente de código de terceiros ou legado 
+- você não quiser que seu código dependa diretamente de código de terceiros ou legado
 - você quiser usar um classe existente mas sua interface for incompatível com a interface que seu código ou domínio precisam
-- você quiser reutilizar várias subclasses que não possuam determinada funcionalidade mas for impraticável estender o código de cada uma apenas para adicionar a funcionalidade desejada 
+- você quiser reutilizar várias subclasses que não possuam determinada funcionalidade mas for impraticável estender o código de cada uma apenas para adicionar a funcionalidade desejada
 
 ## Implementação - Teoria
 
@@ -45,9 +43,11 @@ Use o padrão Adapter quando:
 O que é bom ou ruim no Adapter:
 
 **Bom:**
+
 - Desacopla o código da aplicação de códigos de terceiros
 - Aplica o SRP ao separar a conversão de interfaces da lógica da aplicação
 - Aplica o OCP ao permitir introduzir novos Adapters para código existente
 
 **Ruim:**
+
 - Aumenta a complexidade da aplicação (Por outro lado, qual outra solução deveria ser aplicada?)
